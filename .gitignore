@@ -1,0 +1,29 @@
+# Atlas Project .gitignore
+# Exclude model checkpoints and large saved adapter directories
+atlas_real_mquake/
+atlas_mquake/
+atlas_bench/
+atlas_*/
+*.pt
+*.safetensors
+*.bin
+
+# Exclude Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Exclude Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Exclude environment files
+.env
+*.env
+
+# Exclude OS files
+.DS_Store
+desktop.ini
+
+# Exclude large data downloads (MQuAKE raw cache)
+*.json.cache
